@@ -32,12 +32,15 @@ QR-code-generator/
 ├── package.json
 └── node_modules/
 
+---
 
 ## 🚀 How to Run
 
 ### 1. Clone the Repository
 git clone https://github.com/your-username/QR-code-Generator.git
 cd QR-code-Generator
+
+---
 
 🌐 Hosting the Frontend
 You can deploy the frontend/ folder to services like:
@@ -50,6 +53,8 @@ GitHub Pages
 
 Just drag and drop the contents of the frontend/ folder or follow their setup guide.
 
-
+---
 
 📸 Screenshot
+![QR code Generator](./project sample image.png)
+
