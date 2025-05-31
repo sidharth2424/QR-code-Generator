@@ -116,16 +116,15 @@
         return;
       }
 
-      // Basic URL validation (optional)
       try {
-        new URL(url);
+        new URL(url); // basic validation
       } catch {
         error.textContent = 'Please enter a valid URL.';
         return;
       }
 
-      // Fetch QR code from backend
-      fetch('http://localhost:3000/generate', {
+      // Fetch QR code from hosted backend
+      fetch('https://qr-code-generator-iyri.onrender.com/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url }),
@@ -139,7 +138,7 @@
           qrCode.style.display = 'block';
         })
         .catch(() => {
-          error.textContent = 'Error generating QR code. Make sure backend is running.';
+          error.textContent = 'Error generating QR code. Please try again later.';
         });
     });
   </script>
